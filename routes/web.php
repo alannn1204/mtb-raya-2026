@@ -23,6 +23,3 @@ Route::get('/operator', OperatorDashboard::class)
 Route::get('/agent', AgentDashboard::class)
     ->middleware(['auth', 'role:agent'])
     ->name('agent');
-
-
-
